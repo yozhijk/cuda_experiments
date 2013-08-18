@@ -31,7 +31,7 @@ template <typename T> void scan_gold(T const* in_array, T* out_array, size_t siz
 		out_array[i] = out_array[i-1] + in_array[i-1];
 }
 
-int main()
+int scan_test()
 {
 	srand((unsigned int)time(NULL));
 
@@ -93,5 +93,12 @@ int main()
 	free(h_array);
 	free(h_array_gold);
 	
+	return 0;
+}
+
+
+int main()
+{
+	scan_test();
 	return 0;
 }
